@@ -43,3 +43,7 @@ This log will follow a simple format and is to supplement the github commit log 
 
 - after a few days of chill and planning finally got around to getting together a base mock-up for how I would want the main mood selection page to more or less look, minus final styling options. some work was done on 06/05/2025 and 12/05/2025 but mainly focused on setting up some components and testing a couple of things for the sake of refreshing knowledge. there's likely not much more I can do without setting up the database and log in options so those naturally will be my next steps.
 - need to look over previous projects with database integration to refamiliarise myself with SQL.
+
+# (continued)
+
+- set up for user log in/sign up complete, mostly. commented out for the time being so that the database connection can be set up first, next step will be to crerate the necessary tables and set up the links between and then get the dtatbase info and queries set up in the app itself. being a little vague on these steps primarily because I dont 100% know how this will be set up in terms of the relations between tables or exactly the kinds of colums I'll need but also because this isnt a tutorial, just a log for the sake of keeping track of progression
