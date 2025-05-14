@@ -38,3 +38,8 @@ This log will follow a simple format and is to supplement the github commit log 
 
 - first log entry, exciting stuff. Set up for the app using Next.js and refamiliarising myself with previous projects to plan out this project and how I would like it to function.
 - so far so good, but I do not expect too much progress done today in terms of functionality, but I am hoping that some of what I need comes back to me through reviewing older projects so that I can at least begin to put everything together. I am expecting plenty of bugs
+
+# 14/5/2025
+
+- after a few days of chill and planning finally got around to getting together a base mock-up for how I would want the main mood selection page to more or less look, minus final styling options. some work was done on 06/05/2025 and 12/05/2025 but mainly focused on setting up some components and testing a couple of things for the sake of refreshing knowledge. there's likely not much more I can do without setting up the database and log in options so those naturally will be my next steps.
+- need to look over previous projects with database integration to refamiliarise myself with SQL.

@@ -24,3 +24,22 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+.moodButton {
+  background-color: rgb(27, 77, 215);
+  border-radius: 20px;
+  width: fit-content;
+  padding: 10px;
+  border: aqua 3px solid;
+}
+
+.moodButton:hover {
+  background-color: purple;
+}
+
+.nav {
+  background-color: #a94eff;
+  margin: 20px;
+  padding: 5px;
+  border-radius: 30px;
+}
