@@ -9,16 +9,16 @@ export default function Navbar() {
         </div>
         <div>
           <Link className="nav" href="/">
-            tab1
+            home
+          </Link>
+          <Link className="nav" href="/profile">
+            profile
           </Link>
           <Link className="nav" href="/">
-            tab2
+            feed
           </Link>
           <Link className="nav" href="/">
-            tab3
-          </Link>
-          <Link className="nav" href="/">
-            tab4
+            connections
           </Link>
         </div>
       </div>

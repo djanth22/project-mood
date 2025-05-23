@@ -53,3 +53,7 @@ This log will follow a simple format and is to supplement the github commit log 
 - added the database connection after crerating the main tables in supabase. I may need one or two more later on but for now it all works as intended.
 - needed to debug an error where the connection to the database wasnt working which wasn't fun but it should be working now. however, I'd be daft not to expect further bugs or issues.
 - now that this has been set up I should be able to make further progress on the features and functionality of the web app, hopefully the next update will be fairly exciting
+
+# 23/05/2025
+
+- added moods table to database, updated navigation tabs for future use and features along with updating the joiin date info. next steps will be getting the buttons for the mood list to update the current mood of the user

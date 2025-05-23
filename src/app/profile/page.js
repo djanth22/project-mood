@@ -17,8 +17,8 @@ export default async function Profile() {
         return (
           <>
             <div key={item.id}>
-              <p>{item.user_name}</p>
-              <p>{item.bio}</p>
+              <p>name: {item.user_name}</p>
+              <p>Bio: {item.bio}</p>
             </div>
           </>
         );

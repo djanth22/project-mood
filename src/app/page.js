@@ -1,3 +1,5 @@
+import MoodSelect from "@/components/MoodSelect";
+
 export default function Home() {
   return (
     <div>
@@ -22,6 +24,9 @@ export default function Home() {
           </div>
           <div className="moodButton">
             <p>4</p>
+          </div>
+          <div>
+            <MoodSelect />
           </div>
         </div>
         <p className="text-center bg-blue-500 p-4 m-5">your mood</p>
