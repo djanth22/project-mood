@@ -44,6 +44,29 @@ body {
   border-radius: 30px;
 }
 
+.main-content {
+  background-color: #7a30bf;
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
+  padding: 10px;
+  border-radius: 20px;
+  border: #ededed, 4px, solid;
+  height: 30vh;
+  width: 60vw;
+}
+
+.main {
+  background-color: #41156a;
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
+  padding: 10px;
+  border-radius: 20px;
+  border: #ededed, 4px, solid;
+  height: fit-content;
+}
+
 form {
   display: flex;
   flex-direction: column;
@@ -59,4 +82,46 @@ input {
   text-align: center;
   width: 50vw;
   height: 10vh;
+}
+
+.select-options {
+  display: flex;
+  justify-content: space-between;
+  width: 50vw;
+  height: fit-content;
+  margin: 1vw;
+  background-color: #28004d;
+  border-radius: 10px;
+  text-indent: 20px;
+  text-align: center;
+}
+
+.options-container {
+  display: flex;
+  overflow-y: scroll;
+}
+
+.selectButton {
+  background-color: #a94eff;
+  border-radius: 30px;
+  padding: 5px;
+  border: #0a0a0a, solid, 3px;
+  text-align: center;
+}
+
+.selectButton:hover {
+  background-color: #270844;
+  border-radius: 30px;
+  padding: 5px;
+  border: #e4beff, solid, 3px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.YourMood {
+  height: 20vh;
+}
+
+summary {
+  width: 55vw;
 }

@@ -57,3 +57,7 @@ This log will follow a simple format and is to supplement the github commit log 
 # 23/05/2025
 
 - added moods table to database, updated navigation tabs for future use and features along with updating the joiin date info. next steps will be getting the buttons for the mood list to update the current mood of the user
+
+# 26/05/2025
+
+- updates with the main UI, though final changes will be made later, mood options now togglable to be shown or hidden and there's space for a hotbar feature. a search bar will hopefully be added as the list of moods increases and future plans involve emojis or similar imagery to go along with the mood name. the moods are selectable and they do update the current mood of the user. a lot of frustration getting these to work together but it's seemingly not completely broken, so that is a positive. more buggs to come with the next few features. next steps hopefully are to add the search function and allow for mood selection that way.

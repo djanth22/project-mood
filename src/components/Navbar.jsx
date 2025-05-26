@@ -3,10 +3,8 @@ import Link from "next/link";
 export default function Navbar() {
   return (
     <>
-      <div className="flex m-5">
-        <div>
-          <p className="ml-10 bg-purple-600 rounded-xl">navigation</p>
-        </div>
+      <div className="flex m-5 items-center justify-center">
+        <div></div>
         <div>
           <Link className="nav" href="/">
             home
