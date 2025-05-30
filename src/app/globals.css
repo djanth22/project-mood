@@ -125,3 +125,65 @@ input {
 summary {
   width: 55vw;
 }
+
+.profilePage {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-self: center;
+  width: fit-content;
+}
+
+.profileTitle {
+  background-color: #41156a;
+  width: 80vw;
+  padding: 20px;
+}
+
+.profileContainer {
+  background-color: #380f6e;
+  margin: 3%;
+  padding: 20px;
+}
+
+.profileElement {
+  margin: 10px;
+  background-color: #6624a3;
+  padding: 20px;
+}
+
+.profileEditButton {
+  background-color: #7a30bf;
+  padding: 20px;
+}
+
+.profileContainer,
+.profileElement,
+.profileTitle {
+  border-radius: 30px;
+  border: #b390cb, solid, 3px;
+}
+
+.profileEditButton {
+  border: #e4beff, solid, 3px;
+  border-radius: 30px;
+}
+
+.profileEditButton:hover {
+  border: #613580, solid, 3px;
+  border-radius: 30px;
+  background-color: #41156a;
+  box-shadow: #e4beff 0px 0px 12px;
+  box-shadow: #b957ff 0px 0px 20px;
+}
+
+.profileMood {
+  height: 20vh;
+}
+
+.profileSubtitle {
+  background-color: #250048;
+  padding: 5px;
+  border-radius: 10px;
+  border: #69349a, solid, 3px;
+}

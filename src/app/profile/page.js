@@ -11,20 +11,32 @@ export default async function Profile() {
   const uIw = userInfo.rows;
   return (
     <>
-      <h1>profile page</h1>
+      <div className="profilePage">
+        <h1 className="profileTitle">profile page</h1>
 
-      {uIw.map((item) => {
-        return (
-          <>
-            <div key={item.id}>
-              <p>name: {item.user_name}</p>
-              <p>Bio: {item.bio}</p>
-              <p>current mood: {item.current_mood}</p>
-            </div>
-          </>
-        );
-      })}
-      <Link href="/editProfile">Edit profile</Link>
+        {uIw.map((item) => {
+          return (
+            <>
+              <div key={item.id} className="profileContainer">
+                <p className="profileElement">
+                  Username: <br /> {user.username}
+                </p>
+                <p className="profileElement">
+                  Bio: <br /> {item.bio}
+                </p>
+                <p className="profileElement profileMood">
+                  Current Mood: <br /> {item.current_mood}
+                </p>
+              </div>
+            </>
+          );
+        })}
+        <div className="flex text-center justify-center">
+          <div className="profileEditButton flex text-center justify-center">
+            <Link href="/editProfile">Edit profile</Link>
+          </div>
+        </div>
+      </div>
     </>
   );
 }

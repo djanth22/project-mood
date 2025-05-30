@@ -23,7 +23,9 @@ export default async function EditProfile() {
   }
   return (
     <>
-      <h1>edit page. form here for user to edit details</h1>
+      <h1 className="text-center">
+        edit page. form here for user to edit details
+      </h1>
       <p className="text-center">username: {user.username}</p>
       <p className="text-center">
         joined: {new Date(user.createdAt).toLocaleDateString()}

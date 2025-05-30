@@ -2,10 +2,14 @@ import { db } from "@/utils/dbconnection";
 import { currentUser } from "@clerk/nextjs/server";
 import { revalidatePath } from "next/cache";
 
-export default async function MoodSelect() {
-  const choices = await db.query("SELECT * FROM moods;");
+export default async function NeuMood() {
+  const neu = await db.query("SELECT * FROM moods WHERE category = $1;", [
+    "neutral",
+  ]);
+  const NeW = neu.rows;
 
-  const cIw = choices.rows;
+  console.log(NeW);
+
   const user = await currentUser();
 
   return (
@@ -13,9 +17,9 @@ export default async function MoodSelect() {
       <div className="options-container">
         <details>
           <summary className="cursor-pointer font-semibold mb-2 bg-blue-950 rounded-4xl p-2 text-center">
-            all
+            neutral
           </summary>
-          {cIw.map((item) => {
+          {NeW.map((item) => {
             return (
               <div className="select-options items-center" key={item.id}>
                 <p>{item.name}</p>
