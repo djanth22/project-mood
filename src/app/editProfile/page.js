@@ -1,3 +1,4 @@
+import { redirect } from "next/navigation";
 import { db } from "@/utils/dbconnection";
 import { currentUser } from "@clerk/nextjs/server";
 import { revalidatePath } from "next/cache";
@@ -18,6 +19,7 @@ export default async function EditProfile() {
     );
 
     revalidatePath("/editProfile");
+    redirect("/profile");
   }
   return (
     <>

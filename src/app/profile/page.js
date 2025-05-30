@@ -19,6 +19,7 @@ export default async function Profile() {
             <div key={item.id}>
               <p>name: {item.user_name}</p>
               <p>Bio: {item.bio}</p>
+              <p>current mood: {item.current_mood}</p>
             </div>
           </>
         );

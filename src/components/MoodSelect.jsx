@@ -1,6 +1,7 @@
 import { db } from "@/utils/dbconnection";
 import { currentUser } from "@clerk/nextjs/server";
 import { revalidatePath } from "next/cache";
+import Search from "./Search";
 
 export default async function MoodSelect() {
   const choices = await db.query("SELECT * FROM moods;");
@@ -35,6 +36,9 @@ export default async function MoodSelect() {
             );
           })}
         </details>
+      </div>
+      <div>
+        <Search />
       </div>
     </>
   );
