@@ -3,8 +3,9 @@ import NegMood from "@/components/NegMood";
 import NeuMood from "@/components/NeuMood";
 import MoodSelect from "@/components/MoodSelect";
 import CurrentMood from "@/components/CurrentMood";
+import SearchServer from "@/components/SearchServer";
 
-export default function Home() {
+export default function Home({ searchParams }) {
   return (
     <div>
       <div className="text-center text-3xl bg-blue-400 m-5 p-3 rounded-4xl">
@@ -14,6 +15,9 @@ export default function Home() {
         <p className="text-center m-3 mb-8">select your mood</p>
 
         <div className="main-content">
+          <div>
+            <SearchServer searchParams={searchParams} />
+          </div>
           <div className="options-container">
             <details>
               <summary className="cursor-pointer font-semibold mb-2 bg-blue-950 rounded-4xl p-2 text-center">

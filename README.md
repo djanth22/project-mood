@@ -73,3 +73,7 @@ This log will follow a simple format and is to supplement the github commit log 
 # continued
 
 - decided to spruce up the profile section a little, though not representative of the final result just yet. the search mock up has been removed, but I will still be working on this for both the mood selection and the future connections feature. mainly research based tasks to do and some more style updates but I think for today there won't be much in terms of noticeable changes just yet until I can figure out the things mentioned in the previnous entry
+
+# 18/06/2025
+
+- Finally figured out how to do my search function. to make life harder on myself I wanted to do this with as few components as possible and without any react hooks like useState, I also wanted to avoid having to use a seperate page to route to/from. this was a pain to do but is easily replicated for the connections search by chamging a couple of things. My next step will be to try to implement the journal feature and test to see if that will work as intended. the reason for this is mainly because I can't properly test any of the connection features until after deployment, there are one or two I could do at present but for the time being I'll get the other features working.

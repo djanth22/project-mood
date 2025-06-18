@@ -8,8 +8,6 @@ export default async function NeuMood() {
   ]);
   const NeW = neu.rows;
 
-  console.log(NeW);
-
   const user = await currentUser();
 
   return (

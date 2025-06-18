@@ -8,8 +8,6 @@ export default async function PosMood() {
   ]);
   const NeW = neu.rows;
 
-  console.log(NeW);
-
   const user = await currentUser();
 
   return (

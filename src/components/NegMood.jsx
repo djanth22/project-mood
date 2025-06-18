@@ -8,8 +8,6 @@ export default async function NegMood() {
   ]);
   const NeW = neu.rows;
 
-  console.log(NeW);
-
   const user = await currentUser();
 
   return (

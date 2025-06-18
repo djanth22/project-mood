@@ -1,6 +1,6 @@
 import { db } from "@/utils/dbconnection";
 import { currentUser } from "@clerk/nextjs/server";
-import { revalidatePath } from "next/cache";
+// import { revalidatePath } from "next/cache";
 
 export default async function MoodSelect() {
   const choices = await db.query("SELECT * FROM moods;");
@@ -27,7 +27,7 @@ export default async function MoodSelect() {
                       "UPDATE moodusers SET current_mood = $1 WHERE userid = $2;",
                       [item.name, user.id]
                     );
-                    revalidatePath("/");
+                    // revalidatePath("/");
                   }}
                 >
                   Select
