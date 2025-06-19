@@ -135,7 +135,6 @@ summary {
 
 .profileTitle {
   background-color: #41156a;
-  width: 80vw;
   padding: 20px;
 }
 
@@ -143,17 +142,22 @@ summary {
   background-color: #380f6e;
   margin: 3%;
   padding: 20px;
+  display: flex;
+  width: fit-content;
+  align-self: center;
 }
 
 .profileElement {
-  margin: 10px;
+  margin: 3vh;
   background-color: #6624a3;
-  padding: 20px;
+  padding: 5vw;
 }
 
 .profileEditButton {
   background-color: #7a30bf;
   padding: 20px;
+  border: #e4beff, solid, 3px;
+  border-radius: 30px;
 }
 
 .profileContainer,
@@ -163,21 +167,21 @@ summary {
   border: #b390cb, solid, 3px;
 }
 
-.profileEditButton {
+.biosave {
+  background-color: #7a30bf;
+  padding: 20px;
   border: #e4beff, solid, 3px;
   border-radius: 30px;
+  margin-top: 3vh;
 }
 
-.profileEditButton:hover {
+.biosave:hover {
   border: #613580, solid, 3px;
   border-radius: 30px;
   background-color: #41156a;
   box-shadow: #e4beff 0px 0px 12px;
   box-shadow: #b957ff 0px 0px 20px;
-}
-
-.profileMood {
-  height: 20vh;
+  margin-top: 3vh;
 }
 
 .profileSubtitle {

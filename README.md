@@ -77,3 +77,7 @@ This log will follow a simple format and is to supplement the github commit log 
 # 18/06/2025
 
 - Finally figured out how to do my search function. to make life harder on myself I wanted to do this with as few components as possible and without any react hooks like useState, I also wanted to avoid having to use a seperate page to route to/from. this was a pain to do but is easily replicated for the connections search by chamging a couple of things. My next step will be to try to implement the journal feature and test to see if that will work as intended. the reason for this is mainly because I can't properly test any of the connection features until after deployment, there are one or two I could do at present but for the time being I'll get the other features working.
+
+# 19/06/2025
+
+- logic added from previous project for the posts/journal feature next step will be to add the likes/interactions segments and test them out normally before adding the security features (simple encryption and privacy buttons) though these features will be properly tested after deployment and the connections features are implemented. I also took some time to clean up some of the features as they are currently but more adjustments and changes will follow when in the stages of finalising the look and feel of the site/app

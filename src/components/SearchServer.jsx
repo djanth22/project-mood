@@ -24,22 +24,27 @@ export default async function SearchServer({ searchParams }) {
   const search = searchParams?.search || "";
 
   //   modify this line below for the connections search  bar, replace ILIKE for = and remove both % for exact search
-  const result = search
+  const result = (await search)
     ? await db.query("SELECT * FROM moods WHERE name ILIKE $1", [`%${search}%`])
     : { rows: [] };
 
   return (
     <div>
-      <form method="GET">
-        <input
-          name="search"
-          placeholder="Search moods..."
-          defaultValue={search}
-        />
-        <button className="selectButton" type="submit">
-          Search
-        </button>
-      </form>
+      <details>
+        <summary className="cursor-pointer font-semibold mb-2 bg-blue-950 rounded-4xl p-2 text-center">
+          search moods
+        </summary>
+        <form method="GET">
+          <input
+            name="search"
+            placeholder="Search moods..."
+            defaultValue={search}
+          />
+          <button className="selectButton" type="submit">
+            Search
+          </button>
+        </form>
+      </details>
 
       {result.rows.length > 0 && (
         <ul className="options-container flex-col">
